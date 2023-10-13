@@ -9,11 +9,9 @@ onClick: React.MouseEventHandler;
 const Button = (props:IButton) => { 
 
     return (
-        <button 
-        className=" bg-white w-16 border-solid border-2 border-red-600 rounded-md  
-        hover:w-30 transition-width ease-in-out "  
-        onClick={props.onClick}
-        >
+        <button className="w-60 h-8 bg-white border-solid border-2 
+        rounded-md font-bold hover:w-30 transition-width ease-in-out "
+        onClick={props.onClick}>
             {props.children}
         </button>
     )

@@ -17,11 +17,11 @@ export default function Home() {
 
 
     return (
-    <main className="" >
+    <main className="bg-black" >
         <>
             <div style={{display: displayHome}}  >
                 <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
-                    <Image src={LogoImg} width={193} height={59} alt="" />
+                    <Image className='w-60' src={LogoImg} alt="logotipo" />
                     <Button onClick={handleButtonClick}>Start</Button>
                 </div>
             </div>
