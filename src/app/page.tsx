@@ -1,38 +1,33 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
-import LogoImg from '../assets/logo.svg' 
+import LogoImg from '../../public/assets/logo.svg' 
 import Button from '@/components/Button'
-import Menu from '@/menu/page'
+import Menu from '@/app/Menu/page'
 
-export default function Home() {
+export default function MyApp() {
 
-    const [displayHome, setDisplayHome] = useState('block')
-    const [displayMenu, setDisplayMenu] = useState('none')
+    const [showMenu, setShowMenu] = useState(false)
 
     const handleButtonClick = () => {
-        setDisplayHome('none');
-        setDisplayMenu('block');
+        setShowMenu(!showMenu)
     }
-
 
     return (
     <main className="bg-black" >
         <>
-            <div style={{display: displayHome}}  >
-                <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
-                    <Image className='w-60' src={LogoImg} alt="logotipo" />
-                    <Button onClick={handleButtonClick}>Menu</Button>
-                </div>
+            {!showMenu ? (
+            <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
+                <Image className='w-60' src={LogoImg} alt="logotipo" />
+                <Button onClick={handleButtonClick}>Menu</Button>
             </div>
-
-            <div style={{display: displayMenu}}>
-                <div className={` flex flex-col justify-center items-center `}>
-                    <Menu/>
-                </div>
+            ):(
+            <div className={` flex flex-col justify-center items-center `}>
+                <Menu/>
             </div>
+            )}
         </>
     </main>
 
-  )
+    )
 }
