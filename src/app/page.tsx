@@ -3,15 +3,19 @@ import { useState } from 'react'
 import Image from 'next/image'
 import LogoImg from '../../public/assets/logo.svg' 
 import Button from '@/components/Button'
-import Menu from '@/app/Menu/page'
+import Menu from '@/app/menu/page'
+
+
+
 
 export default function MyApp() {
 
     const [showMenu, setShowMenu] = useState(false)
 
-    const handleButtonClick = () => {
+    const handleBtnMenu = () => {
         setShowMenu(!showMenu)
     }
+ 
 
     return (
     <main className="bg-black" >
@@ -19,7 +23,7 @@ export default function MyApp() {
             {!showMenu ? (
             <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
                 <Image className='w-60' src={LogoImg} alt="logotipo" />
-                <Button onClick={handleButtonClick}>Menu</Button>
+                <Button onClick={handleBtnMenu}>Menu</Button>
             </div>
             ):(
             <div className={` flex flex-col justify-center items-center `}>
@@ -31,3 +35,4 @@ export default function MyApp() {
 
     )
 }
+
