@@ -2,8 +2,8 @@
 import { MouseEventHandler } from "react";
 
 interface IButton {
-children: string;
-onClick: React.MouseEventHandler;
+children?: string;
+onClick?: React.MouseEventHandler;
 }
 
 const Button = (props:IButton) => { 

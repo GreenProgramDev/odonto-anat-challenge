@@ -5,9 +5,6 @@ import LogoImg from '../../public/assets/logo.svg'
 import Button from '@/components/Button'
 import Menu from '@/app/menu/page'
 
-
-
-
 export default function MyApp() {
 
     const [showMenu, setShowMenu] = useState(false)
@@ -15,7 +12,6 @@ export default function MyApp() {
     const handleBtnMenu = () => {
         setShowMenu(!showMenu)
     }
- 
 
     return (
     <main className="bg-black" >
@@ -35,4 +31,3 @@ export default function MyApp() {
 
     )
 }
-
