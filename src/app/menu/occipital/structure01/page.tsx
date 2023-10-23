@@ -10,7 +10,8 @@ export default function Structure01() {
 
     return (
         <>
-            <form  className=" bg-black h-screen justify-center " >
+            <div className=" bg-black h-screen flex flex-col items-center ">
+            <form >
                 <Image className='w-screen ' src={PageOne} alt="img" />
             {/* the tag h2 received component what render each structure*/}
                 <h2 className='text-red-50 text-lg text-center my-5'>Structure 01</h2>
@@ -40,13 +41,14 @@ export default function Structure01() {
                     </div>
                 </div>
 
-                <div className='flex justify-around pt-10'>
-                    {/* <ButtonBack/> */}
-                    <button className='text-cyan-50 border-l-2 border-b-2 rounded-md px-3 '><a href="/menu/">Menu</a></button>
-                    <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold" href="/menu/occipital/structure02">Next</Link>
-                </div>
             
             </form> 
+            <div className='fixed bottom-5 flex gap-16 pt-10'>
+                {/* <ButtonBack/> */}
+                <Link className='text-cyan-50 border-l-2 border-b-2 rounded-md px-3 ' href="/menu/">Menu</Link>
+                <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold" href="/menu/occipital/structure02">Next</Link>
+            </div>
+            </div>
         </>
     )
 }
