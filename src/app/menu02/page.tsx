@@ -31,7 +31,7 @@ export default function Menu02(){
             </div>
             <div className='flex fixed bottom-10 gap-10 '>
                 <Link className="text-cyan-50 border-l-2 border-b-2 rounded-md 
-                px-3 font-bold" href="/menu">Back</Link>
+                px-3 font-bold" href="/menu02">Back</Link>
                 <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md 
                 px-3 font-bold" href="/menu03">Next</Link>
             </div>
