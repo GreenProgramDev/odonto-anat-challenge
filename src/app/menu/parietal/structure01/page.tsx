@@ -12,7 +12,7 @@ export default function Structure01() {
                 Structure 01
             </h1>
             <div className="flex justify-around">
-            <Link className="text-cyan-50 border-b-2 border-l-2  rounded-md px-3 " href="/menu"> 
+            <Link className="text-cyan-50 border-b-2 border-l-2  rounded-md px-3 " href="/menu02"> 
                 Menu
             </Link>
             <Link className="text-cyan-50 border-b-2 border-r-2 rounded-md px-3 " href="/menu/parietal/structure02"> 
