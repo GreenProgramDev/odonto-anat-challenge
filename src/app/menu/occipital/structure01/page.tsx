@@ -4,10 +4,13 @@ import PageOne from '../../../../../public/assets/pageA1.png';
 import OptionsAnswer from '@/components/OptionsAnswer';
 import ButtonBack from '@/components/ButtonBack';
 import Link from 'next/link';
+import generateQuestions from '@/app/utils/helper/generateQuestions';
+import namesBones from '@/app/utils/constants/namesBones';
+
 
 export default function Structure01() {
 
-
+    let quests = generateQuestions(namesBones, "temporal")
     return (
         <>
             <div className=" bg-black h-screen flex flex-col items-center ">
@@ -18,13 +21,13 @@ export default function Structure01() {
                 <div className='flex justify-around items-center px-5'>
                     <div className='mr-10 pr-5'>
             {/* options from quest received component what render four wrong and one correct*/}
-                        <OptionsAnswer name='option' >Quest 01</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 02</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 03</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 04</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 05</OptionsAnswer>
+            {quests.map((quest) => (
+                <OptionsAnswer key={quest} name='option'>{quest}</OptionsAnswer>
+            ))}
+   
+                       
                     </div>
-                    <button className='text-cyan-50 mr-6 my-6 p-3 h-5  bg-zinc-700 flex items-center text-center border-b-2 border-r-2 rounded-lg'  type='button'>Next Quest</button>
+                    <button className='text-cyan-50      my-6 p-3  h-5  bg-zinc-700 flex items-center text-center border-b-2 border-r-2 rounded-lg'  type='button'>Next Quest</button>
                 </div>
 
                 <div className='bg-slate-800 flex flex-col pb-2 mx-16 my-10 border-b-4 rounded-xl'>
