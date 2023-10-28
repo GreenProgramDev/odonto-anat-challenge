@@ -16,6 +16,7 @@ const generateQuestions = ( namesBones: string[], rightAnswer: string  ) => {
 
     return slicedVariedNames.sort(() => Math.random() - 0.5);
 
+
 }
 
 export default generateQuestions

@@ -33,5 +33,4 @@ const namesBones = [
     "Lâmina lateral",
 ]
 
-
 export default namesBones
