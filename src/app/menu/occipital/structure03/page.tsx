@@ -1,28 +1,4 @@
-// 'use client'
-
-// import ButtonBack from "@/components/ButtonBack";
-// import Link from "next/link";
-
-// export default function Structure03() {
-
-//     return (
-//         <div className="bg-black h-screen flex flex-col gap-4 text-center">
-
-//             <h1 className="text-cyan-50">
-//                 Structure 03
-//             </h1>
-//             <div className="flex justify-around">
-//             <ButtonBack/>
-//             <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold  " href="/menu"> 
-//                 Menu
-//             </Link>
-            
-//             </div>
-//         </div>
-//     )
-// }
-
-           
+'use client'
 
 
 
@@ -32,52 +8,90 @@ import PageOne from '../../../../../public/assets/pageC1.png';
 import OptionsAnswer from '@/components/OptionsAnswer';
 import ButtonBack from '@/components/ButtonBack';
 import Link from 'next/link';
+import generateQuestions from '@/app/utils/helper/generateQuestions';
+import namesBones from '@/app/utils/constants/namesBones';
+import Counter from '@/components/Counter';
+import { useState } from 'react';
+
 
 export default function Structure03() {
 
+    const [structureIndex, setStructureIndex] = useState(0)
+    
+    let structure = [
+        generateQuestions(namesBones, "test1"),
+        generateQuestions(namesBones, "test2"),
+        generateQuestions(namesBones, "test3"),
+        generateQuestions(namesBones, "test4"),
+        generateQuestions(namesBones, "test5"),
+        generateQuestions(namesBones, "test6"),
+        generateQuestions(namesBones, "test7"),
+    ]
 
+    
+
+   const handleNextQuest = () => {
+
+    if(structureIndex < structure.length - 1){
+        setStructureIndex(structureIndex + 1)
+
+    }
+
+    const rightAnswerInput = document.querySelector('input[name="option"]:checked.rightAnswer')
+
+    if(rightAnswerInput){
+        
+    }
+
+
+   }
+
+   const structureTitle = `Structure ${structureIndex + 1}`
+   const nextButtonText = structureIndex === structure.length - 1 
+   ?   <Link className="" href="/menu">Finish</Link> 
+   : "Next Quest"
+
+
+   
     return (
         <>
             <div className=" bg-black h-screen flex flex-col items-center ">
             <form >
                 <Image className='w-screen ' src={PageOne} alt="img" />
             {/* the tag h2 received component what render each structure*/}
-                <h2 className='text-red-50 text-lg text-center my-5'>Structure 01</h2>
+                <h2 className='text-red-50 text-lg text-center my-5'>{structureTitle}</h2>
                 <div className='flex justify-around items-center px-5'>
                     <div className='mr-10 pr-5'>
             {/* options from quest received component what render four wrong and one correct*/}
-                        <OptionsAnswer name='option' >Quest 01</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 02</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 03</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 04</OptionsAnswer>
-                        <OptionsAnswer name='option' >Quest 05</OptionsAnswer>
-                    </div>
-                    <button className='text-cyan-50 mr-6 my-6 p-3 h-5  bg-zinc-700 flex items-center text-center border-b-2 border-r-2 rounded-lg'  type='button'>Next Quest</button>
-                </div>
 
-                <div className='bg-slate-800 flex flex-col pb-2 mx-16 my-10 border-b-4 rounded-xl'>
-                    <p className='text-cyan-50 flex justify-center mt-5'>Counter</p>
-                    <div className='flex justify-around px-2 py-3'>
-                        <div>
-                            <h1 className='text-cyan-50 flex justify-center' >Correct</h1>
-                            <p className='text-cyan-50 flex justify-center' >0</p>
-                        </div>
-                        <div>
-                            <h1 className='text-cyan-50 flex justify-center' >Wrong</h1>
-                            <p className='text-cyan-50 flex justify-center' >0</p>
-                        </div>
-                    </div>
-                </div>
-
+            <div>
+                {structure[structureIndex].map( (quest) => (<OptionsAnswer key={quest} name='option' >{quest}</OptionsAnswer>))}
+            </div>
+                       
+            </div>
+                <button className='text-cyan-50 my-6 p-3  h-5  bg-zinc-700 flex items-center text-center border-b-2 border-r-2 rounded-lg' onClick={handleNextQuest} type='button'>{nextButtonText}</button>
+            </div>
+            
+            <Counter />
             
             </form> 
             <div className='fixed bottom-5 flex gap-16 pt-10'>
-            <ButtonBack/>
-            <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold  " href="/menu"> 
-                Menu
-            </Link>
-            </div>
+                <ButtonBack/>
+                <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold  " href="/menu"> 
+                    Menu
+                </Link>
+                </div>
             </div>
         </>
     )
 }
+
+
+
+
+
+
+
+
+
+
