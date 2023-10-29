@@ -6,7 +6,7 @@ const namesBones = [
     "Proc. mastóide",
     "Fissura timpanomastóidea",
     "Canal carótico",
-    "forame estilomastóideo",
+    "Forame estilomastóideo",
     "Sulcos arteriais",
     "Fissura petrotimpânica",
     "Proc. estilóide",
@@ -28,6 +28,8 @@ const namesBones = [
     "Asa maior",
     "Forame redondo",
     "Lâmina lateral",
+    "Forame espinhoso",
+    "Canal pterigóideo",
 ]
 
 export default namesBones
