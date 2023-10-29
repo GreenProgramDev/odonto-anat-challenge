@@ -78,9 +78,12 @@ export default function Quiz3() {
             
             </form> 
             <div className='fixed bottom-5 flex gap-16 pt-10'>
-                <ButtonBack/>
-                <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold  " href="/menu/occipital/quiz4"> 
-                    Menu
+            <ButtonBack/>
+                <Link className="text-cyan-50 border-b-2  rounded-md px-3 " href="/menu"> 
+                Menu
+                </Link>
+                <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold " href="/menu/occipital/quiz4"> 
+                Next
                 </Link>
                 </div>
             </div>
