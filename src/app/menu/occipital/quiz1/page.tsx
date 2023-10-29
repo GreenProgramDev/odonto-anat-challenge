@@ -60,7 +60,7 @@ export default function Quiz1() {
                 <Image className='w-screen ' src={PageOne} alt="img" />
             {/* the tag h2 received component what render each structure*/}
                 <h2 className='text-red-50 text-lg text-center my-5'>{structureTitle}</h2>
-                <div className='grid grid-cols-3 grid-rows-1 w-screen '>
+                <div className='grid grid-cols-3 grid-rows-1 px-4 '>
                     <div className='grid grid-rows-5  col-span-2 '>
                      {/* options from quest received component what render four wrong and one correct*/}
                         {structure[structureIndex].map( (quest) => (<OptionsAnswer key={quest} name='option' >{quest}</OptionsAnswer>))}

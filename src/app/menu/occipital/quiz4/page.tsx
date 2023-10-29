@@ -57,7 +57,7 @@ export default function Quiz4() {
    const structureTitle = `Structure ${structureIndex + 1}`
    const nextButtonText = structureIndex === structure.length - 1 
    ?   <Link className="" href="/menu">Finish</Link> 
-   : "Next Quest"
+   : "Next"
 
 
    
@@ -68,17 +68,15 @@ export default function Quiz4() {
                 <Image className='w-screen ' src={PageOne} alt="img" />
             {/* the tag h2 received component what render each structure*/}
                 <h2 className='text-red-50 text-lg text-center my-5'>{structureTitle}</h2>
-                <div className='flex justify-around items-center px-5'>
-                    <div className='mr-10 pr-5'>
-            {/* options from quest received component what render four wrong and one correct*/}
-
-            <div>
-                {structure[structureIndex].map( (quest) => (<OptionsAnswer key={quest} name='option' >{quest}</OptionsAnswer>))}
-            </div>
-                       
-            </div>
-                <button className='text-cyan-50 my-6 p-3  h-5  bg-zinc-700 flex items-center text-center border-b-2 border-r-2 rounded-lg' onClick={handleNextQuest} type='button'>{nextButtonText}</button>
-            </div>
+                <div className='grid grid-cols-3 grid-rows-1 px-4 '>
+                    <div className='grid grid-rows-5  col-span-2 '>
+                     {/* options from quest received component what render four wrong and one correct*/}
+                        {structure[structureIndex].map( (quest) => (<OptionsAnswer key={quest} name='option' >{quest}</OptionsAnswer>))}
+                    </div>
+                    <div className='col-span-1 w-auto flex items-end justify-end flex-grow'>
+                        <button className='text-cyan-50 absolute  p-3  h-5  bg-zinc-700 flex items-center text- text-center border-b-2 border-r-2 rounded-lg' onClick={handleNextQuest} type='button'>{nextButtonText}</button>
+                    </div>
+                </div>
             
             <Counter />
             
