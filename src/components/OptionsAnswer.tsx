@@ -10,7 +10,7 @@ const OptionsAnswer = (props:IOptionsAnswer) => {
 
     return (
         <div className="flex justify-start text-cyan-50">
-            <label className="flex gap-2">
+            <label className="flex gap-2 ">
                 <input  type="radio" name={props.name} />
                 {props.children}
             </label>

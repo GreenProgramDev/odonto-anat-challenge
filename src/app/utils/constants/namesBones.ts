@@ -1,6 +1,5 @@
 const namesBones = [
     "Face Temporal",
-    "Proc. zig",
     "Fossa Mandibular",
     "Poro acústico externo",
     "Tubérculo articular",
