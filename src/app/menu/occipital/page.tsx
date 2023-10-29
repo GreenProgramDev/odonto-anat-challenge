@@ -3,6 +3,7 @@ import PagA2 from '../../../../public/assets/pagA2.svg'
 import PagB2 from '../../../../public/assets/pagB2.svg' 
 import PagC2 from '../../../../public/assets/pagC2.svg' 
 import PagD2 from '../../../../public/assets/pagD2.svg' 
+import PagE2 from '../../../../public/assets/pagE2.svg' 
 
 export default function OcciptalGroup(){
 
@@ -18,6 +19,7 @@ export default function OcciptalGroup(){
             <QuizLink src={PagB2} href="/menu/occipital/quiz2">Quiz 02</QuizLink>
             <QuizLink src={PagC2} href="/menu/occipital/quiz3">Quiz 03</QuizLink>
             <QuizLink src={PagD2} href="/menu/occipital/quiz4">Quiz 04</QuizLink>
+            <QuizLink src={PagE2} href="/menu/occipital/quiz5">Quiz 05</QuizLink>
         </div>   
         </div>
         </>
