@@ -10,7 +10,7 @@ import ButtonBack from '@/components/ButtonBack';
 import Link from 'next/link';
 import generateQuestions from '@/app/utils/helper/generateQuestions';
 import namesBones from '@/app/utils/constants/namesBones';
-// import Counter from '@/components/Counter';
+import Counter from '@/components/Counter';
 import { useState } from 'react';
 
 

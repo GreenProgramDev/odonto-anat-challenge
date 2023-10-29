@@ -56,7 +56,7 @@ export default function Quiz4() {
 
    const structureTitle = `Structure ${structureIndex + 1}`
    const nextButtonText = structureIndex === structure.length - 1 
-   ?   <Link className="" href="/menu">Finish</Link> 
+   ?   <Link className="" href="/menu/occipital/quiz5">Finish</Link> 
    : "Next"
 
 
@@ -81,11 +81,14 @@ export default function Quiz4() {
             <Counter />
             
             </form> 
-            <div className='fixed bottom-5 flex gap-16 pt-10'>
-                <ButtonBack/>
-                <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold  " href="/menu"> 
+                <div className='fixed bottom-5 flex gap-16 pt-10'>
+                    <ButtonBack/>
+                    <Link className="text-cyan-50 border-b-2  rounded-md px-3 " href="/menu"> 
                     Menu
-                </Link>
+                    </Link>
+                    <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold " href="/menu/occipital/quiz5"> 
+                    Next
+                    </Link>
                 </div>
             </div>
         </>
