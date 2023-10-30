@@ -1,3 +1,4 @@
+
 const namesBones = [
     "Face Temporal",
     "Fossa Mandibular",
@@ -35,6 +36,8 @@ const namesBones = [
     "Proc. clinóide anteerior",
     "Proc. clinóide posterior",
     "Fossa hipofisial"
-]
+];
+
+
 
 export default namesBones

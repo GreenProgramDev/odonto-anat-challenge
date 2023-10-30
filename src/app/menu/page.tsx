@@ -8,7 +8,6 @@ import ParietalGroup from './parietal/page';
 export default function Menu(){
 
     return (
-
         <div className='bg-black h-screen w-screen px-8 pt-12 flex flex-col items-center '>
             <Image className=' fixed top-5 w-36' src={LogoImg} alt="Logotype" />
             <div className='flex flex-col '>
@@ -34,8 +33,6 @@ export default function Menu(){
                     Next
                 </Link>
             </div> */}
-
-
         </div>
     )
 }

@@ -17,12 +17,12 @@ export default function MyApp() {
     <main className="bg-black" >
         <>
             {!showMenu ? (
-            <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
+                <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
                 <Image className='w-60' src={LogoImg} alt="logotipo" />
                 <Button onClick={handleBtnMenu}>Menu</Button>
             </div>
             ):(
-            <div className={` flex flex-col justify-center items-center `}>
+                <div className={` flex flex-col justify-center items-center `}>
                 <Menu/>
             </div>
             )}

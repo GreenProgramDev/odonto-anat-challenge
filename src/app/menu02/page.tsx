@@ -1,10 +1,8 @@
 'use client';
 import Image from 'next/image'
 import Link from 'next/link';
-import ButtonBack from '@/components/ButtonBack';
 import LogoImg from '../../../public/assets/logo.svg' 
 import OccipitalGroup from '../menu/occipital/page';
-import ParientalGroup from '../menu/parietal/page';
 
 export default function Menu02(){
 
@@ -24,7 +22,7 @@ export default function Menu02(){
 
                     {/* Insert Frame Components Here */}
                     <div className='flex flex-col fixed px-6 top-36'>
-                      <ParientalGroup/>
+                        <OccipitalGroup/>
                     </div>
                     {/* Insert Frame Components Here */}
 
