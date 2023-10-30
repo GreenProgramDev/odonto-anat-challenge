@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import PageOne from '../../../../../public/assets/pageE1.svg';
+import PageOne from '../../../../../public/assets/pageG1.svg'
 import OptionsAnswer from '@/components/OptionsAnswer';
 import Link from 'next/link';
 import Counter from '@/components/Counter';
@@ -11,7 +11,7 @@ import ButtonBack from '@/components/ButtonBack';
 
 
 
-export default function Quiz5() {
+export default function Quiz7() {
 
     const [structureIndex, setStructureIndex] = useState(0);
     
@@ -39,7 +39,7 @@ export default function Quiz5() {
 
    const structureTitle = `Structure ${structureIndex + 1}`
    const nextButtonText = structureIndex === structure.length - 1 
-   ?   <Link className=" text-sm" href="/menu/occipital/quiz6">Next Quiz</Link> 
+   ?   <Link className=" text-sm" href="/menu">Next Quiz</Link> 
    : "Next"
 
 
@@ -72,11 +72,12 @@ export default function Quiz5() {
                         </div>
                     </div>
                 <Counter />
+                
                 </form> 
                 <div className='fixed bottom-5 flex gap-16 pt-10'>
                     <ButtonBack/>
-                    <Link className='text-cyan-50 border-b-2 rounded-md px-3 ' href="/menu/">Menu</Link>
-                    <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold" href="/menu/occipital/quiz6">Next</Link>
+                    <Link className='text-cyan-50 border-r-2 border-b-2 rounded-md px-3 ' href="/menu/">Menu</Link>
+                    {/* <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold" href="/menu/occipital/quiz6">Next</Link> */}
                 </div>
                 </div>
         </>
