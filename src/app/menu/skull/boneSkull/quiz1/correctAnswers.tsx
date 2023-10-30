@@ -16,7 +16,7 @@ export const correctAnswers: string[] = [
     "Forame mentual",
     "Corpo da mandibula",
     "Proce. alveolar da maxila",
-    "Espinha nasal int. da maxima",
+    "Espinha nasal int. da maxila",
     "Ramo da mandíbula",
     "Osso etmoide",
     "Osso zigomático",
@@ -27,7 +27,7 @@ export const correctAnswers: string[] = [
     "Asa menor do osso esfenoide",
     "Superf. orbital do osso front",
     "Forame supraorbital",
-    "Glabela do osso frontal",
+    "Glabela  do osso frontal",
 ];
 
 export const structure = correctAnswers.map((correctAnswer: string) => generateQuestions(namesBones, correctAnswer));
