@@ -25,7 +25,7 @@ export const correctAnswers: string[] = [
     "Processo frontal da maxila",
     "Osso temporal",
     "Asa menor do osso esfeno.",
-    "Superf. orbi. do osso front",
+    "Superf. orbital osso front",
     "Forame supraorbital",
     "Glabela  do osso frontal",
 ];
