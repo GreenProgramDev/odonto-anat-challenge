@@ -1,9 +1,7 @@
 'use client';
-import Image from 'next/image'
-import Link from 'next/link';
-import LogoImg from '../../../public/assets/logo.svg' 
+import Image from 'next/image';
+import LogoImg from '../../../public/assets/logo.svg';
 import OccipitalGroup from './occipital/page';
-import ParietalGroup from './parietal/page';
 
 export default function Menu(){
 
