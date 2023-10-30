@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import LogoImg from '../../public/assets/logo.svg' 
 import Button from '@/components/Button'
-import Menu from '@/app/menu/page'
+import Menu from './menu/skull/page'
 
 export default function MyApp() {
 
