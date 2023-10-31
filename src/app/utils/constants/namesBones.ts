@@ -24,7 +24,7 @@ const namesBones = [
     "Hâmulo Pterigóideo",
     "Fissura Orbital Superior",
     "Crista Esfenoidal",
-    "Abertura Seio Esfenoidal",
+    "Abert. Seio Esfenoidal",
     "Asa Menor",
     "Asa Maior",
     "Forame Redondo",
