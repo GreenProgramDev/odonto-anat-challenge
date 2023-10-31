@@ -6,7 +6,7 @@ export const correctAnswers: string[] = [
     "Asa menor",
     "Canal óptico",
     "Jugo esfenoidal",
-    "Fissura orbital superior",
+    "Fissura Orbital Superior",
     "Asa maior",
     "Forame redondo",
     "Proc. clinóide anterior",
