@@ -3,20 +3,20 @@ import namesBones from '@/app/utils/constants/namesBones';
 
 export const correctAnswers: string[] = [
    
-    "Asa menor",
-    "Crista esfenoidal",
-    "Abertura do seio esfenoidal",
-    "Asa maior", 
-    "Forame redondo",
-    "Lâmina medial",
-    "Lâmina lateral",
-    "Forame oval",
-    "Forame espinhoso",
-    "Fossa pterigóidea",
+    "Asa Menor",
+    "Crista Esfenoidal",
+    "Abertura do Seio Esfenoidal",
+    "Asa Maior", 
+    "Forame Redondo",
+    "Lâmina Medial",
+    "Lâmina Lateral",
+    "Forame Oval",
+    "Forame Espinhoso",
+    "Fossa Pterigóidea",
     "Corpo",
-    "Fissura orbital superior",
-    "Hâmulo pterigóideo",
-    "Face temporal",
+    "Fissura Orbital Superior",
+    "Hâmulo Pterigóideo",
+    "Face Temporal",
 
     
 ];

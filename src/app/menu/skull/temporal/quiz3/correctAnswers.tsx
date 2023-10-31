@@ -3,13 +3,13 @@ import namesBones from '@/app/utils/constants/namesBones';
 
 export const correctAnswers: string[] = [
    
-    "Sulcos arteriais",
-    "Proc. zigomático",
-    "Poro acústico externo",
-    "Ápice da parte petrosa",
-    "Proc. estilóide",
-    "Sulco do seio sigmóide",
-    "Forame mastóideo",
+    "Sulcos Arteriais",
+    "Proce. Zigomático",
+    "Poro Acústico Externo",
+    "Ápice da Parte Petrosa",
+    "Proce. Estilóide",
+    "Sulco do Seio Sigmóide",
+    "Forame Mastóideo",
     
 ];
 

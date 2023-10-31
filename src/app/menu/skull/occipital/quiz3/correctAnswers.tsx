@@ -3,18 +3,18 @@ import namesBones from '@/app/utils/constants/namesBones';
 
 export const correctAnswers: string[] = [
 
-    "Asa menor",
-    "Canal óptico",
-    "Jugo esfenoidal",
+    "Asa Menor",
+    "Canal Ôptico",
+    "Jugo Esfenoidal",
     "Fissura Orbital Superior",
-    "Asa maior",
-    "Forame redondo",
-    "Proc. clinóide anterior",
-    "Proc. clinóide posterior",
-    "Fossa hipofisial",
-    "Sela turca",
-    "Forame espinhoso",
-    "Forame oval",
+    "Asa Maior",
+    "Forame Redondo",
+    "Proc. Clinóide Anterior",
+    "Proc. Clinóide Posterior",
+    "Fossa Hipofisial",
+    "Sela Turca",
+    "Forame Espinhoso",
+    "Forame Oval",
 
 ];
 
