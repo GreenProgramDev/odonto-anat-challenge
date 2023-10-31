@@ -54,12 +54,12 @@ const namesBones = [
     "Ramo da mandíbula",
     "Osso etmoide",
     "Osso zigomático",
-    "Proce. temporal do osso zigo.",
+    "Proce. temporal osso zigo.",
     "Osso esfenoide",
     "Processo frontal da maxila",
     "Osso temporal",
     "Forame supraorbital",
-    "Glabela do osso frontal,"
+    "Glabe la do osso frontal,"
 ];
 
 
