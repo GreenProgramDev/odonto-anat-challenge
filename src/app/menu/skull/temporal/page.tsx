@@ -12,9 +12,9 @@ export default function TemporalGroup(){
                 <h2 className=' text-cyan-50'>Temporal Bones View</h2>
                 <div className='grid grid-cols-3  gap-x-3 gap-y-2 py-1 '>                            
                                  {/* temporary files for illustration */}                            
-                    <QuizLink src={PagA1} href="/menu/skull/temporal/quiz1">Quiz 01</QuizLink>
-                    <QuizLink src={PagB1} href="/menu/skull/temporal/quiz2">Quiz 02</QuizLink>
-                    <QuizLink src={PagC1} href="/menu/skull/temporal/quiz3">Quiz 03</QuizLink>
+                    <QuizLink src={PagA1} href="/menu/skull/temporal/quiz1"></QuizLink>
+                    <QuizLink src={PagB1} href="/menu/skull/temporal/quiz2"></QuizLink>
+                    <QuizLink src={PagC1} href="/menu/skull/temporal/quiz3"></QuizLink>
                 </div>   
             </div>
         </>

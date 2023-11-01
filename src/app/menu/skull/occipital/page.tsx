@@ -12,10 +12,10 @@ export default function OcciptalGroup(){
                 <h2 className=' text-cyan-50'>Occiptal Bones View</h2>
                 <div className='grid grid-cols-3  gap-x-3 gap-y-2 py-1 '>                            
                                  {/* temporary files for illustration */}                            
-                    <QuizLink src={PagA1} href="/menu/skull/occipital/quiz1">Quiz 01</QuizLink>
-                    <QuizLink src={PagB1} href="/menu/skull/occipital/quiz2">Quiz 02</QuizLink>
-                    <QuizLink src={PagC1} href="/menu/skull/occipital/quiz3">Quiz 03</QuizLink>
-                    <QuizLink src={PagD1} href="/menu/skull/occipital/quiz4">Quiz 04</QuizLink>
+                    <QuizLink src={PagA1} href="/menu/skull/occipital/quiz1"></QuizLink>
+                    <QuizLink src={PagB1} href="/menu/skull/occipital/quiz2"></QuizLink>
+                    <QuizLink src={PagC1} href="/menu/skull/occipital/quiz3"></QuizLink>
+                    <QuizLink src={PagD1} href="/menu/skull/occipital/quiz4"></QuizLink>
                     
                 </div>   
             </div>

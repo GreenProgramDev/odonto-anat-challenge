@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import PageOne from '../../../../../../public/assets/imgBoneSkull/pageD1.svg';
+import PageOne from '../../../../../../public/assets/imgBoneSkull/pageC1.svg';
 import OptionsAnswer from '@/components/OptionsAnswer';
 import Link from 'next/link';
 import Counter from '@/components/Counter';
@@ -10,8 +10,8 @@ import { correctAnswers, structure } from './correctAnswers';
 import ButtonBack from '@/components/ButtonBack';
 
 
-
-export default function Quiz3() {
+ 
+export default function Quiz4() {
 
     const [structureIndex, setStructureIndex] = useState(0);
     

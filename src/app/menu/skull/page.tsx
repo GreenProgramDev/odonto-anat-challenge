@@ -8,7 +8,7 @@ import TemporalGroup from './temporal/page';
 export default function Menu(){
 
     return (
-        <div className='bg-black h-screen w-screen px-8 pt-12 flex flex-col items-center '>
+        <div className='bg-black min-h-screen min-w-screen px-8 pt-12 flex flex-col items-center '>
             <Image className=' fixed top-5 w-36' src={LogoImg} alt="Logotype" />
             <div className='flex flex-col '>
                 <div className='flex flex-col items-center  '>
