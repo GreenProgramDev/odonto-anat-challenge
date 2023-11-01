@@ -38,7 +38,7 @@ export default function Quiz1() {
 
    const structureTitle = `Structure ${structureIndex + 1}`
    const nextButtonText = structureIndex === structure.length - 1 
-   ?   <Link className=" text-sm" href="/menu/skull/">Next Quiz</Link> 
+   ?   <Link className=" text-sm" href="/menu/skull/boneSkull/quiz2">Next Quiz</Link> 
    : "Next"
 
 
@@ -75,7 +75,7 @@ export default function Quiz1() {
                 </form> 
                 <div className='fixed bottom-5 flex gap-16 pt-10'>
                     <Link className='text-cyan-50 border-l-2 border-b-2 rounded-md px-3 font-bold' href="/menu/skull/">Menu</Link>
-                    <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold" href="/menu/skull/">Next</Link>
+                    <Link className="text-cyan-50 border-r-2 border-b-2 rounded-md px-3 font-bold" href="/menu/skull/boneSkull/quiz2">Next</Link>
                 </div>
                 </div>
         </>

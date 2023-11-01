@@ -38,7 +38,7 @@ const namesBones = [
     "Fossa Hipofisial",
     "Osso Frontal",
     "Osso Nasal",
-    "Lamina Orbit. Osso Etmoide",
+    "Lamina Orbit. O. Etmoide",
     "Sutura Coronal",
     "Osso Pariental",
     "Proce. Frontal Osso Zigo",

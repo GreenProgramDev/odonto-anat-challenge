@@ -4,7 +4,7 @@ import namesBones from '@/app/utils/constants/namesBones';
 export const correctAnswers: string[] = [
     "Osso Frontal",
     "Osso Nasal",
-    "Lamina Orbit. Osso Etmoide",
+    "Lamina Orbit. O. Etmoide",
     "Sutura Coronal",
     "Osso Pariental",
     "Proce. Frontal Osso Zigo.",
@@ -24,7 +24,7 @@ export const correctAnswers: string[] = [
     "Osso Esfenoide",
     "Processo Frontal da Maxila",
     "Osso Temporal",
-    "Asa Menor do Osso Esfeno.",
+    "Asa Menor do O. Esfeno.",
     "Superf. Orbital Osso Front.",
     "Forame Supraorbital",
     "Glabela Osso Frontal",
