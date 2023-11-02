@@ -5,7 +5,7 @@ import Image from 'next/image'
 import LogoImg from '../../../public/assets/logo.svg' 
 import Link from "next/link"
 
-export default function Login() {    
+export default function Welcome() {    
     
     return (
         <>

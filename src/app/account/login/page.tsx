@@ -14,15 +14,6 @@ export default function Login() {
         setShowMenu(!showMenu)
     }
     
-    const [showLogins, setShowLogins] = useState(false)
-    const handleBtnLogin = () => {
-        setShowLogins(false)
-    }
-    const handleBtnRegister = () => {
-        setShowLogins(true)
-    }
-
-
     return (
         <>
             <div className="bg-black">
@@ -30,7 +21,7 @@ export default function Login() {
                 {!showMenu ? (
                     <div className={` gap-10 flex flex-col justify-center items-center w-screen h-screen `}>
                         <LoginCard onClick={handleBtnMenu} />
-                </div>
+                    </div>
                 ):(
                     <div className={` flex flex-col justify-center items-center `}>
                     <Menu/>

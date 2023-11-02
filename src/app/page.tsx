@@ -6,6 +6,7 @@ import Button from '@/components/Button'
 import Menu from './menu/skull/page'
 import { LoginCard } from '@/components/LoginCard'
 import Login from './account/page'
+import Welcome from './account/page'
 
 export default function MyApp() {
 
@@ -22,7 +23,7 @@ export default function MyApp() {
     return (
     <main className="bg-black" >
         <>
-        <Login/>
+        <Welcome/>
         </>
     </main>
 
