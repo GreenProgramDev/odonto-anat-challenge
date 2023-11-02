@@ -1,9 +1,8 @@
 'use client'
-import { MouseEventHandler } from "react";
-
 interface IButton {
-children?: string;
-onClick?: React.MouseEventHandler;
+    children?: string ;
+    onClick?: React.MouseEventHandler;
+    
 }
 
 const Button = (props:IButton) => { 
@@ -12,7 +11,7 @@ const Button = (props:IButton) => {
         <button className="w-60 h-8 bg-white border-solid border-2 
         rounded-md font-bold hover:w-30 transition-width ease-in-out "
         onClick={props.onClick}>
-            {props.children}
+            {props.children} 
         </button>
     )
 }
