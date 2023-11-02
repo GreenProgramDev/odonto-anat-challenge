@@ -70,8 +70,8 @@ export default function Quiz1() {
                             <button className='text-cyan-50 absolute  p-3  h-5  bg-zinc-700 flex items-center text- text-center border-b-2 border-r-2 rounded-lg' onClick={handleNextQuest} type='button'>{nextButtonText}</button>
                         </div>
                     </div>
-                <Counter />
-                
+                    <Counter />
+
                 </form> 
                 <div className='fixed bottom-5 flex gap-16 pt-10'>
                     <Link className='text-cyan-50 border-l-2 border-b-2 rounded-md px-3 font-bold' href="/menu/skull/">Menu</Link>

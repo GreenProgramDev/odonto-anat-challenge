@@ -9,7 +9,7 @@ export const correctAnswers: string[] = [
     "Fissura orbital superior",
     "Asa maior face cerebral",
     "Forame redondo",
-    "Trabéculas do osso esponjoso",
+    "Trabéculas do osso esponj.",
     "Lâmina medial",
     "Lâmina lateral",
     "Dorso da sela",

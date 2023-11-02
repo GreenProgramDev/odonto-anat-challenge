@@ -20,7 +20,7 @@ export const correctAnswers: string[] = [
     "Ramo da Mandíbula",
     "Osso Etmoide",
     "Osso Zigomático",
-    "Proce. Temporal Osso Zigo.",
+    "Proce. Temporal O. Zigo.",
     "Osso Esfenoide",
     "Processo Frontal da Maxila",
     "Osso Temporal",
