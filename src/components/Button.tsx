@@ -2,7 +2,6 @@
 interface IButton {
     children?: string ;
     onClick?: React.MouseEventHandler;
-    
 }
 
 const Button = (props:IButton) => { 
