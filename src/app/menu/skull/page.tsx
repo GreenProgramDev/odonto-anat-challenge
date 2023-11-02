@@ -25,11 +25,11 @@ export default function Menu(){
                     </div>
             </div>
             
-            <div className='flex fixed bottom-3 '>
+            {/* <div className='flex fixed bottom-3 '>
                 <Link className=" text-cyan-50 border-x-2 border-b-2 rounded-md px-3 font-bold" href="menu02"> 
                     Next
                 </Link>
-            </div>
+            </div> */}
         </div>
     )
 }
