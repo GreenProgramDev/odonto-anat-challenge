@@ -9,17 +9,10 @@ const Counter = () => {
 
     return(
 
-        <div className='bg-slate-800 flex flex-col pb-2 mx-16 my-10 border-b-4 rounded-xl'>
-            <p className='text-cyan-50 flex justify-center mt-5'>Counter</p>
-            <div className='flex justify-around px-2 py-3'>
-                <div>
-                <h1 className='text-cyan-50 flex justify-center' >Correct</h1>
-                <p className='text-cyan-50 flex justify-center' >{correctAnswer}</p>
-                </div>
-                <div>
-                <h1 className='text-cyan-50 flex justify-center' >Wrong</h1>
-                <p className='text-cyan-50 flex justify-center' >{wrongAnswer}</p>
-                </div>
+        <div className='bg-slate-800 flex flex-col text-right w-fit px-5 ml-5 mt-4 border-b-4 rounded-xl'>
+            <div className='flex flex-col justify-around px-1 py-2'>
+                <h1 className='text-cyan-50 flex justify-center' >Correct: {correctAnswer} </h1>
+                <h1 className='text-cyan-50 flex justify-center' >Wrong: {wrongAnswer} </h1>
             </div>
         </div>
     )
